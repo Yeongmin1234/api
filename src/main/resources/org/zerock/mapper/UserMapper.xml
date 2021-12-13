@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zerock.mapper.UserMapper">
+<!-- 	<select id="list" resultType="org.zerock.domain.UserVO"> -->
+<!-- 		<![CDATA[ -->
+<!-- 			select * from GD_USER where UserNo > 0 -->
+<!-- 		]]> -->
+<!-- 	</select> -->
+	
+	<select id="list" resultType="org.zerock.domain.UserVO">
+			select *
+			from GD_USER a inner join GD_USER_DETAIL b
+			on b.userNo = a.UserNo
+<!-- 			where a.UserNo>0; -->
+	</select>
+	
+</mapper>
