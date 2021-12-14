@@ -15,13 +15,13 @@
 <script type="text/javascript" src="/resources/js/users.js"></script>
 </head>
 <body>
-<c:forEach var="list" items="${ulist}">
-<%-- 		<c:out value="${list.regDate}" /> --%>
-<!-- 		<br> -->
-<%-- 		<c:out value="${list.updtDate}" /> --%>
-<!-- 		<br> -->
-		<c:out value="${list}" />
-		<br><br>
-</c:forEach>
+<%-- <c:forEach var="list" items="${ulist}"> --%>
+<%-- <%-- 		<c:out value="${list.regDate}" /> --%> --%>
+<!-- <!-- 		<br> --> -->
+<%-- <%-- 		<c:out value="${list.updtDate}" /> --%> --%>
+<!-- <!-- 		<br> --> -->
+<%-- 		<c:out value="${list}" /> --%>
+<!-- 		<br><br> -->
+<%-- </c:forEach> --%>
 </body>
 </html>

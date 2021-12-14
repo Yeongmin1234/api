@@ -17,7 +17,7 @@ public class UserServiceImpl implements UserService {
 	public UserMapper mapper;
 
 	public List<UserVO> list() {
-		System.out.println("error@@@@@@@@"+mapper.list());
+//		System.out.println("error@@@@@@@@"+mapper.list());
 		
 		return mapper.list();
 	}
