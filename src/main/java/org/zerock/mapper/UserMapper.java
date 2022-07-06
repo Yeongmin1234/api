@@ -6,4 +6,5 @@ import org.zerock.domain.UserVO;
 
 public interface UserMapper {
 	public List<UserVO> list();
+	
 }

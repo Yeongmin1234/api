@@ -1,10 +1,6 @@
 package org.zerock.domain;
 
-import java.util.Date;
 
-import lombok.Data;
-
-@Data
 public class UserVO {
 	
 	private int UserNo;
@@ -32,4 +28,26 @@ public class UserVO {
 //	private String englishName;
 //	
 //	private String chinaName;
+	public int getUserNo() {
+		return UserNo;
+	}
+	public void setUserNo(int userNo) {
+		UserNo = userNo;
+	}
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	@Override
+	public String toString() {
+		return "UserVO [UserNo=" + UserNo + ", Name=" + Name + ", id=" + id + "]";
+	}
 }

@@ -1,6 +1,5 @@
 package org.zerock.service;
 
-import java.io.File;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -17,8 +16,8 @@ public class UserServiceImpl implements UserService {
 	public UserMapper mapper;
 
 	public List<UserVO> list() {
-//		System.out.println("error@@@@@@@@"+mapper.list());
 		
 		return mapper.list();
 	}
+
 }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<title>Insert title here</title>
+<script src="./translate.js"></script>
+<script src="./tool-1.0.min.js"></script>
+<script src="./time.js"></script>
+	<style>
+		.container {
+			width: 1080px;
+			margin: 200px auto;
+			text-align: center;
+		}
+		.container h2{
+			margin-bottom: 100px;
+		}
+		.rowBox {
+			width: 800px;
+			margin: 0 auto 40px auto;
+			display: flex;
+			justify-content: space-between;
+		}
+		.row1{
+			padding: 30px;
+			background-color: antiquewhite;
+		}
+		.row2{
+			padding: 30px;
+			background-color: antiquewhite;
+		}
+		.presale__box-d-day{
+			padding: 10px 0;
+			background-color: rgb(156, 156, 156);
+		}
+		.-active{
+			background-color: cornflowerblue;
+		}
+		.hidden{
+			display: none;
+		}
+		.btn{
+			text-align: center;
+		}
+	</style>
+	</head>
+	 <body>
+		<div class="container">
+			<h2>pre-sale</h2>
+			<div class="rowBox">
+				<div class="row1">
+					<h3 data-translate="sale-title-1" data-translate-type="text">1st Auction</h3>
+					<p data-translate="sale-term-1" data-translate-type="text">4/19(TUE) 06:00 ~ 4/21(THU) 06:00, UTC</p>
+					<span id="d_day1"></span>
+				</div>
+				<div class="row2">
+					<h3 data-translate="sale-title-2" data-translate-type="text">2st Auction</h3>
+					<p data-translate="sale-term-2" data-translate-type="text">4/22(FRI) 06:00 ~ 4/24(SUN) 06:00, UTC</p>
+					<span id="d_day2"></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
